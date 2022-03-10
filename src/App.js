@@ -6,11 +6,6 @@ function App() {
 
   const [books, setBooks] = useState([])
 
-  useEffect( () => {
-    fetch("http://localhost:4000/books")
-      .then(res => res.json())
-      .then(json => setBooks(json))
-  }, [])
   return (
     <div className="App">
       <h1>📚 Reading List</h1>
